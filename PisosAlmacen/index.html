@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/pisosAlmacen.css">
+    <title>Pisos</title>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="cell d-0"></div>
+        <div class="cell d-1"></div>
+        <div class="cell d-2"></div>
+        <div class="cell d-1"></div>
+        <div class="cell d-2"></div>
+        <div class="cell d-2"></div>
+        <div class="cell d-3"></div>
+        <div class="cell d-3"></div>
+        <div class="cell d-4"></div>
+    </div>
+
+    <div class="conteiner" id="grid12x12" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="div1">
+            <div class="card noAsignado" id="11" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>11</span>
+                <p class="folio"></p>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="card noAsignado" id="12" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>12</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="card noAsignado" id="13" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>13</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="card noAsignado" id="14" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>14</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div5">
+            <div class="card noAsignado" id="15" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>15</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div6">
+            <div class="card noAsignado" id="16" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>16</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div7">
+            <div class="card noAsignado" id="17" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>17</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div8">
+            <div class="card noAsignado" id="18" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>18</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div9">
+            <div class="card noAsignado" id="19" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>19</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div10">
+            <div class="card noAsignado" id="20" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>20</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div11"> </div>
+        <div class="div12"> </div>
+        <div class="div13">
+            <div class="card noAsignado" id="1" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>1</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div14">
+            <div class="card noAsignado" id="2" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>2</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div15">
+            <div class="card noAsignado" id="3" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>3</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div16">
+            <div class="card noAsignado" id="4" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>4</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div17">
+            <div class="card noAsignado" id="5" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>5</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div18">
+            <div class="card noAsignado" id="6" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>6</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div19">
+            <div class="card noAsignado" id="7" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>7</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div20">
+            <div class="card noAsignado" id="8" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>8</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div21">
+            <div class="card noAsignado" id="9" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>9</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div22">
+            <div class="card noAsignado" id="10" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>10</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div23">
+            <div class="card noAsignado" id="21" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>21</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div24">
+            <div class="card noAsignado" id="28" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>28</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div25"> </div>
+        <div class="div26"> </div>
+        <div class="div27"> </div>
+        <div class="div28"> </div>
+        <div class="div29"> </div>
+        <div class="div30"> </div>
+        <div class="div31"> </div>
+        <div class="div32"> </div>
+        <div class="div33"> </div>
+        <div class="div34"> </div>
+        <div class="div35">
+            <div class="card noAsignado" id="22" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>22</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div36">
+            <div class="card noAsignado" id="29" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>29</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div37"> </div>
+        <div class="div38"> </div>
+        <div class="div39"> </div>
+        <div class="div40"> </div>
+        <div class="div41"> </div>
+        <div class="div42">
+            <div class="card noAsignado" id="42" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>8M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div43">
+            <div class="card noAsignado" id="41" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>7M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div44">
+            <div class="card noAsignado" id="40" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>6M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div45">
+            <div class="card noAsignado" id="39" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>5M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div46"> </div>
+        <div class="div47">
+            <div class="card noAsignado" id="23" onclick="solicitarFolio(this)">
+                <div class="card-border-top" onclick="solicitarFolio(this)">
+                </div>
+                <span>23</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div48">
+            <div class="card noAsignado" id="30" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>30</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div49"> </div>
+        <div class="div50"> </div>
+        <div class="div51"> </div>
+        <div class="div52"> </div>
+        <div class="div53"> </div>
+        <div class="div54">
+            <div class="card noAsignado" id="35" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>1M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div55">
+            <div class="card noAsignado" id="36" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>2M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div56">
+            <div class="card noAsignado" id="37" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>3M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div57">
+            <div class="card noAsignado" id="38" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>4M</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div58"> </div>
+        <div class="div59">
+            <div class="card noAsignado" id="24" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>24</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div60">
+            <div class="card noAsignado" id="31" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>31</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div61"> </div>
+        <div class="div62"> </div>
+        <div class="div63"> </div>
+        <div class="div64"> </div>
+        <div class="div65"> </div>
+        <div class="div66"> </div>
+        <div class="div67"> </div>
+        <div class="div68"> </div>
+        <div class="div69"> </div>
+        <div class="div70"> </div>
+        <div class="div71">
+            <div class="card noAsignado" id="25" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>25</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div72">
+            <div class="card noAsignado" id="32" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>32</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div73"> </div>
+        <div class="div74">
+            <div class="card noAsignado" id="43" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>1G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div75">
+            <div class="card noAsignado" id="44" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>2G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div76">
+            <div class="card noAsignado" id="45" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>3G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div77"> </div>
+        <div class="div78"> </div>
+        <div class="div79"> </div>
+        <div class="div80">
+            <div class="card noAsignado" id="48" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>6G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div81">
+            <div class="card noAsignado" id="50" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>7G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div82"> </div>
+        <div class="div83">
+            <div class="card noAsignado" id="26" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>26</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div84">
+            <div class="card noAsignado" id="33" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>33</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div85"> </div>
+        <div class="div86"> </div>
+        <div class="div87"> </div>
+        <div class="div88"> </div>
+        <div class="div89"> </div>
+        <div class="div90"> </div>
+        <div class="div91"> </div>
+        <div class="div92">
+            <div class="card noAsignado" id="46" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>4G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div93">
+            <div class="card noAsignado" id="47" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>5G</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div94"> </div>
+        <div class="div95">
+            <div class="card noAsignado" id="27" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>27</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <div class="div96">
+            <div class="card noAsignado" id="34" onclick="solicitarFolio(this)">
+                <div class="card-border-top">
+                </div>
+                <span>34</span>
+                <p class="folio">  </p>
+            </div>
+        </div>
+        <!-- Habilitar en caso de requerir usar los faltantes, actualmente en uso 8 rows de 12 
+        <div class="div97"> </p></div>
+        <div class="div98"> </div>
+        <div class="div99"> </div>
+        <div class="div100"> </div>
+        <div class="div101"> </div>
+        <div class="div102"> </div>
+        <div class="div103"> </div>
+        <div class="div104"> </div>
+        <div class="div105"> </div>
+        <div class="div106"> </div>
+        <div class="div107"> </div>
+        <div class="div108"> </div>
+        <div class="div109"> </div>
+        <div class="div110"> </div>
+        <div class="div111"> </div>
+        <div class="div112"> </div>
+        <div class="div113"> </div>
+        <div class="div114"> </div>
+        <div class="div115"> </div>
+        <div class="div116"> </div>
+        <div class="div117"> </div>
+        <div class="div118"> </div>
+        <div class="div119"> </div>
+        <div class="div120"> </div>
+        <div class="div121"> </div>
+        <div class="div122"> </div>
+        <div class="div123"> </div>
+        <div class="div124"> </div>
+        <div class="div125"> </div>
+        <div class="div126"> </div>
+        <div class="div127"> </div>
+        <div class="div128"> </div>
+        <div class="div129"> </div>
+        <div class="div130"> </div>
+        <div class="div131"> </div>
+        <div class="div132"> </div>
+        <div class="div133"> </div>
+        <div class="div134"> </div>
+        <div class="div135"> </div>
+        <div class="div136"> </div>
+        <div class="div137"> </div>
+        <div class="div138"> </div>
+        <div class="div139"> </div>
+        <div class="div140"> </div>
+        <div class="div141"> </div>
+        <div class="div142"> </div>
+        <div class="div143"> </div>
+        <div class="div144"> </div>
+        -->                        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/pisosAlmacen.js"></script>
+</body>
+
+</html>
